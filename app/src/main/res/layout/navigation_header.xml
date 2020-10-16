@@ -9,11 +9,11 @@
 
     >
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/logo"
-        ></ImageView>
+        ></de.hdodenhof.circleimageview.CircleImageView>
 
     <TextView
         android:layout_width="wrap_content"

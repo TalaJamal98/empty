@@ -9,881 +9,899 @@
     android:id="@+id/drawer"
     >
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#c2bdbf">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/first"
-        tools:ignore="MissingConstraints">
-
-
-
-        <ImageView
-            android:id="@+id/pic"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="15dp"
-            android:src="@drawable/logo">
-
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:layout_toRightOf="@+id/pic"
-            android:text="Ruba Badawi"
-            android:textSize="25sp"
-
-            android:textColor="@color/white"/>
-
-
-        <View
-            android:id="@+id/underline"
-            android:layout_width="180dp"
-            android:layout_height="1dp"
-            android:layout_toRightOf="@id/pic"
-            android:layout_below="@id/name"
-
-            android:background="#5c5c3d"/>
-
-        <TextView
-            android:id="@+id/edit"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="85dp"
-            android:layout_toRightOf="@+id/pic"
-            android:text="Edit profile"
-            android:textSize="20sp"
-
-            android:textColor="@color/white"/>
-
-
-
-
-        <RatingBar
-            android:id="@+id/ratingBar1"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_below="@+id/pic"
-            style="?android:attr/ratingBarStyleSmall"
-            android:layout_marginLeft="30dp"
-
-            android:numStars="5"
-            android:rating="1.5"/>
-
-
-
-        <View
-            android:id="@+id/sp1"
-            android:layout_width="match_parent"
-            android:layout_height="0.8dp"
-            android:layout_alignBottom="@+id/ratingBar1"
-android:layout_marginBottom="5dp"
-
-            android:background="#5c5c3d"/>
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/bar"
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/first"
-
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-
-
-        <TextView
-            android:id="@+id/posts"
-            android:layout_width="130dp"
-            android:layout_height="30dp"
-
-            android:layout_marginLeft="10dp"
-            android:textColor="@color/white"
-            android:text="100 Posts"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar1"
-
-            android:textSize="17sp"
-
-            />
-
-        <TextView
-            android:id="@+id/following"
-            android:layout_width="130dp"
-            android:layout_height="30dp"
-
-
-            android:textColor="@color/white"
-            android:text="100 following"
-            android:textSize="17sp"
-            android:gravity="center_horizontal"/>
-
-        <TextView
-            android:id="@+id/followers"
-            android:layout_width="130dp"
-            android:layout_height="30dp"
-
-            android:textColor="@color/white"
-            android:text="100 followers"
-            android:textSize="17sp"
-            android:gravity="center_horizontal"/>
-
-
-
-
-    </LinearLayout>
-
-    <View
-        android:id="@+id/sp2"
-        android:layout_width="match_parent"
-        android:layout_height="0.8dp"
-        android:layout_below="@id/bar"
-        app:layout_constraintTop_toBottomOf="@id/bar"
-        android:background="#5c5c3d"/>
-
-    <RelativeLayout
-        android:id="@+id/post"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@id/sp2">
-
-        <Button
-
-            android:enabled="true"
-            android:id="@+id/something"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:layout_marginLeft="130dp"
-            android:background="@color/yellow"
-            android:layout_marginTop="10dp"
-            android:text="Post Something"
-            android:textColor="@color/white"
-            >
-
-        </Button>
-        <!-- <TextView
-             android:layout_width="match_parent"
-             android:layout_height="40dp"
-             android:text="Post Something"
-             android:textSize="19dp"
-             android:textColor="@color/white"
-             android:gravity="center">
-
-         </TextView>-->
-
-
-
-
-    </RelativeLayout>
-
-
-    <ScrollView
-        android:id="@+id/ScrollView01"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="70dp">
-
-
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="240dp"
-
-           >
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/linear1"
-    >
-
-
-
-
-<androidx.cardview.widget.CardView
-
-    android:id="@+id/card1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="8dp"
-    android:layout_marginTop="15dp"
-
-
-
-    >
-
-
-
-    <ImageView
-
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/logo"
-        android:layout_marginLeft="250dp"
-        ></ImageView>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp" >
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_marginTop="35dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Product's name"
-                    android:layout_marginBottom="10dp"></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Price"
-                    android:layout_marginBottom="10dp"></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Color" android:layout_marginBottom="10dp"></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Size"></TextView>
-
-
-
-
-
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/heart">
-
-        </ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="428 Likes"
-            android:textSize="10dp"
-
-            android:layout_height="wrap_content">
-
-        </TextView>
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/com">
-
-            </ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="428 Comments"
-                android:textSize="10dp"
-
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-            <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/more">
-
-            </ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="More"
-                android:textSize="10dp"
-
-                android:layout_height="wrap_content">
-
-            </TextView>
-        </LinearLayout>
-    </LinearLayout>
-
-
-</androidx.cardview.widget.CardView>
-
-    <de.hdodenhof.circleimageview.CircleImageView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/profile_image"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/logo"
-        app:civ_border_width="2dp"
-        app:civ_border_color="@color/white"
-        android:elevation="8dp"
-        android:layout_marginLeft="15dp"
-
-        />
-
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ruba Badawi"
-        android:layout_toRightOf="@id/profile_image"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="6dp"
-        android:elevation="8dp"
-        ></TextView>
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#e5e5e5"
+        >
 
 
-    <TextView
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:48 AM"
-        android:layout_toRightOf="@id/profile_image"
-        android:gravity="center"
-       android:textSize="10sp"
-        android:layout_below="@id/header"
-        android:layout_marginLeft="6dp"
-        android:elevation="8dp"
-        ></TextView>
-</RelativeLayout>
+            tools:ignore="MissingConstraints">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/linear2"
-    android:layout_below="@id/linear1"
-    android:layout_marginTop="15dp"
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/Toolbar"></ImageView>
 
-    >
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card2"
 
-                android:layout_marginTop="10dp"
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/first"
+            tools:ignore="MissingConstraints">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/logo">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
+                android:layout_marginTop="55dp"
+                android:layout_toRightOf="@+id/pic"
+                android:text="Ruba Badawi"
+                android:textSize="25sp"
+
+                android:textColor="@color/white"/>
+
+
+            <View
+                android:id="@+id/underline"
+                android:layout_width="180dp"
+                android:layout_height="1dp"
+                android:layout_toRightOf="@id/pic"
+                android:layout_below="@id/name"
+
+                android:background="#5c5c3d"/>
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/pic"
+                android:text="Edit profile"
+                android:textSize="20sp"
+
+                android:textColor="@color/white"/>
+
+
+
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/pic"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginLeft="30dp"
+
+                android:numStars="5"
+                android:rating="1.5"/>
+
+
+
+            <View
+                android:id="@+id/sp1"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_alignBottom="@+id/ratingBar1"
+                android:layout_marginBottom="5dp"
+
+                android:background="#5c5c3d"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/first"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/posts"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="100 Posts"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar1"
+
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+
+
+                android:textColor="@color/white"
+                android:text="100 following"
+                android:textSize="17sp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+
+                android:textColor="@color/white"
+                android:text="100 followers"
+                android:textSize="17sp"
+                android:gravity="center_horizontal"/>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/sp2"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@id/bar"
+            app:layout_constraintTop_toBottomOf="@id/bar"
+            android:background="#5c5c3d"/>
+
+        <RelativeLayout
+            android:id="@+id/post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/sp2">
+
+            <Button
+
+                android:enabled="true"
+                android:id="@+id/something"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="130dp"
+                android:background="@drawable/rounded"
+                android:layout_marginTop="10dp"
+                android:text="Post Something"
+                android:textColor="@color/white"
                 >
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/logo"
-                    android:layout_marginLeft="250dp"
-                    ></ImageView>
+            </Button>
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:text="Post Something"
+                 android:textSize="19dp"
+                 android:textColor="@color/white"
+                 android:gravity="center">
+
+             </TextView>-->
 
 
-                <LinearLayout
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/post"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="12dp" >
+                    android:id="@+id/linear1"
+                    >
 
 
-                    <LinearLayout
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/card1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="15dp"
 
 
+
+                        >
+
+
+
+                        <ImageView
+
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logo"
+                            android:layout_marginLeft="250dp"
+                            ></ImageView>
 
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_marginTop="35dp"
-                                android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp" >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Product's name"
-                                android:layout_marginBottom="10dp"></TextView>
-                            <TextView
-                                android:layout_width="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_marginTop="35dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Product's name"
+                                        android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Price"
+                                        android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Color" android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Size"></TextView>
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Price"
-                                android:layout_marginBottom="10dp"></TextView>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Color" android:layout_marginBottom="10dp"></TextView>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Size"></TextView>
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/heart">
 
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="428 Likes"
+                                    android:textSize="10dp"
 
+                                    android:layout_height="wrap_content">
 
+                                </TextView>
 
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/com">
 
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="428 Comments"
+                                    android:textSize="10dp"
 
+                                    android:layout_height="wrap_content">
 
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/more">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="More"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
                         </LinearLayout>
 
 
-                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
-                    <LinearLayout
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/white"
+                        android:elevation="8dp"
+                        android:layout_marginLeft="15dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruba Badawi"
+                        android:layout_toRightOf="@id/profile_image"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="6dp"
+                        android:elevation="8dp"
+                        ></TextView>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:48 AM"
+                        android:layout_toRightOf="@id/profile_image"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:layout_below="@id/header"
+                        android:layout_marginLeft="6dp"
+                        android:elevation="8dp"
+                        ></TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear2"
+                    android:layout_below="@id/linear1"
+                    android:layout_marginTop="15dp"
+
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card2"
+
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:src="@drawable/heart">
-
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:text="428 Likes"
-                            android:textSize="10dp"
-
-                            android:layout_height="wrap_content">
-
-                        </TextView>
+                        app:cardCornerRadius="8dp"
+                        >
 
                         <ImageView
-                            android:layout_width="20dp"
-                            android:layout_marginLeft="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logo"
+                            android:layout_marginLeft="250dp"
+                            ></ImageView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:src="@drawable/com">
+                            android:orientation="vertical"
+                            android:padding="12dp" >
 
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:text="428 Comments"
-                            android:textSize="10dp"
 
-                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
 
-                        </TextView>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_marginTop="35dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Product's name"
+                                        android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Price"
+                                        android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Color" android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Size"></TextView>
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/heart">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="428 Likes"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/com">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="428 Comments"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/more">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="More"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/white"
+                        android:elevation="8dp"
+                        android:layout_marginLeft="15dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/header2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruba Badawi"
+                        android:layout_toRightOf="@id/profile"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="6dp"
+                        android:elevation="8dp"
+                        ></TextView>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:48 AM"
+                        android:layout_toRightOf="@id/profile"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:layout_below="@id/header2"
+                        android:layout_marginLeft="6dp"
+                        android:elevation="8dp"
+                        ></TextView>
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear2"
+                    android:layout_marginTop="15dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        >
 
                         <ImageView
-                            android:layout_marginLeft="10dp"
-                            android:layout_width="20dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/logo"
+                            android:layout_marginLeft="250dp"
+                            ></ImageView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:src="@drawable/more">
-
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_marginTop="30dp"
-                            android:text="More"
-                            android:textSize="10dp"
-
-                            android:layout_height="wrap_content">
-
-                        </TextView>
-                    </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/profile"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/logo"
-        app:civ_border_width="2dp"
-        app:civ_border_color="@color/white"
-        android:elevation="8dp"
-        android:layout_marginLeft="15dp"
-
-        />
-
-    <TextView
-        android:id="@+id/header2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ruba Badawi"
-        android:layout_toRightOf="@id/profile"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="6dp"
-        android:elevation="8dp"
-        ></TextView>
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:48 AM"
-        android:layout_toRightOf="@id/profile"
-        android:gravity="center"
-        android:textSize="10sp"
-        android:layout_below="@id/header2"
-        android:layout_marginLeft="6dp"
-        android:elevation="8dp"
-        ></TextView>
-</RelativeLayout>
-
-
-
-
-
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/linear2"
-    android:layout_marginTop="15dp">
-           <androidx.cardview.widget.CardView
-               android:id="@+id/card3"
-
-               android:layout_marginTop="10dp"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               app:cardCornerRadius="8dp"
-               >
-
-               <ImageView
-                   android:layout_width="150dp"
-                   android:layout_height="150dp"
-                   android:src="@drawable/logo"
-                   android:layout_marginLeft="250dp"
-                   ></ImageView>
-
-
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:padding="12dp" >
-
-
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:orientation="horizontal">
-
-
-
-
-                       <LinearLayout
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:orientation="vertical">
-                           <TextView
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Product's name"
-                               android:layout_marginBottom="10dp"></TextView>
-                           <TextView
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Price"
-                               android:layout_marginBottom="10dp"></TextView>
-                           <TextView
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Color" android:layout_marginBottom="10dp"></TextView>
-                           <TextView
-                               android:layout_width="wrap_content"
-                               android:layout_height="wrap_content"
-                               android:text="Size"></TextView>
-
-
-
-
-
-
-
-                       </LinearLayout>
-
-
-                   </LinearLayout>
-
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:orientation="horizontal">
-                       <ImageView
-                           android:layout_width="20dp"
-                           android:layout_height="wrap_content"
-                           android:layout_marginTop="20dp"
-                           android:src="@drawable/heart">
-
-                       </ImageView>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_marginTop="30dp"
-                           android:text="428 Likes"
-                           android:textSize="10dp"
-
-                           android:layout_height="wrap_content">
-
-                       </TextView>
-
-                       <ImageView
-                           android:layout_width="20dp"
-                           android:layout_marginLeft="10dp"
-                           android:layout_height="wrap_content"
-                           android:layout_marginTop="20dp"
-                           android:src="@drawable/com">
-
-                       </ImageView>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_marginTop="30dp"
-                           android:text="428 Comments"
-                           android:textSize="10dp"
-
-                           android:layout_height="wrap_content">
-
-                       </TextView>
-
-                       <ImageView
-                           android:layout_marginLeft="10dp"
-                           android:layout_width="20dp"
-                           android:layout_height="wrap_content"
-                           android:layout_marginTop="20dp"
-                           android:src="@drawable/more">
-
-                       </ImageView>
-                       <TextView
-                           android:layout_width="wrap_content"
-                           android:layout_marginTop="30dp"
-                           android:text="More"
-                           android:textSize="10dp"
-
-                           android:layout_height="wrap_content">
-
-                       </TextView>
-                   </LinearLayout>
-               </LinearLayout>
-           </androidx.cardview.widget.CardView>
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/profile_im"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/logo"
-        app:civ_border_width="2dp"
-        app:civ_border_color="@color/white"
-        android:elevation="8dp"
-        android:layout_marginLeft="15dp"
-
-        />
-
-    <TextView
-        android:id="@+id/header3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ruba Badawi"
-        android:layout_toRightOf="@id/profile_im"
-        android:gravity="center"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="6dp"
-        android:elevation="8dp"
-        ></TextView>
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10:48 AM"
-        android:layout_toRightOf="@id/profile_im"
-        android:gravity="center"
-        android:textSize="10sp"
-        android:layout_below="@id/header3"
-        android:layout_marginLeft="6dp"
-        android:elevation="8dp"
-        ></TextView>
-</RelativeLayout>
-
-            <!-- <LinearLayout
-                 android:id="@+id/owner"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:orientation="horizontal"
-
-                 tools:ignore="MissingConstraints">
-
-
-                 <ImageView
-                     android:id="@+id/pic2"
-                     android:layout_width="50dp"
-                     android:layout_height="50dp"
-                     android:layout_marginLeft="30dp"
-                     android:layout_marginTop="10dp"
-                     android:src="@drawable/logo"
-
-                     ></ImageView>
-
-
-                 <TextView
-                     android:id="@+id/ownerName"
-                     android:layout_width="150dp"
-                     android:layout_height="40dp"
-                     android:layout_gravity="center"
-                     android:layout_marginLeft="10dp"
-                     android:layout_marginTop="11dp"
-                     android:text="Ruba Badawi"
-                     android:textSize="17sp" />
-             </LinearLayout>
-
-
-             <LinearLayout
-                 android:id="@+id/linear"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_below="@+id/owner"
-                 android:orientation="vertical"
-                 app:layout_constraintTop_toBottomOf="@id/owner"
-                 tools:ignore="MissingConstraints">
-
-
-                 <ImageView
-                     android:id="@+id/cactus"
-                     android:layout_width="380dp"
-                     android:layout_height="300dp"
-                     android:layout_below="@+id/sp2"
-                     android:layout_marginLeft="15dp"
-                     android:layout_marginTop="20dp"
-                     android:src="@drawable/cactus"
-
-                     ></ImageView>
-
-                 <TextView
-                     android:id="@+id/product"
+                            android:orientation="vertical"
+                            android:padding="12dp" >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Product's name"
+                                        android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Price"
+                                        android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Color" android:layout_marginBottom="10dp"></TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Size"></TextView>
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/heart">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="428 Likes"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/com">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="428 Comments"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="20dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/more">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:text="More"
+                                    android:textSize="10dp"
+
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_im"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/logo"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/white"
+                        android:elevation="8dp"
+                        android:layout_marginLeft="15dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/header3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ruba Badawi"
+                        android:layout_toRightOf="@id/profile_im"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="6dp"
+                        android:elevation="8dp"
+                        ></TextView>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:48 AM"
+                        android:layout_toRightOf="@id/profile_im"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:layout_below="@id/header3"
+                        android:layout_marginLeft="6dp"
+                        android:elevation="8dp"
+                        ></TextView>
+                </RelativeLayout>
+
+                <!-- <LinearLayout
+                     android:id="@+id/owner"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+
+                     tools:ignore="MissingConstraints">
+
+
+                     <ImageView
+                         android:id="@+id/pic2"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:layout_marginLeft="30dp"
+                         android:layout_marginTop="10dp"
+                         android:src="@drawable/logo"
+
+                         ></ImageView>
+
+
+                     <TextView
+                         android:id="@+id/ownerName"
+                         android:layout_width="150dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="11dp"
+                         android:text="Ruba Badawi"
+                         android:textSize="17sp" />
+                 </LinearLayout>
+
+
+                 <LinearLayout
+                     android:id="@+id/linear"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/owner"
+                     android:orientation="vertical"
+                     app:layout_constraintTop_toBottomOf="@id/owner"
+                     tools:ignore="MissingConstraints">
+
+
+                     <ImageView
+                         android:id="@+id/cactus"
+                         android:layout_width="380dp"
+                         android:layout_height="300dp"
+                         android:layout_below="@+id/sp2"
+                         android:layout_marginLeft="15dp"
+                         android:layout_marginTop="20dp"
+                         android:src="@drawable/cactus"
+
+                         ></ImageView>
+
+                     <TextView
+                         android:id="@+id/product"
+                         android:layout_width="match_parent"
+                         android:layout_height="30dp"
+                         android:layout_below="@+id/cactus"
+                         android:layout_marginTop="10dp"
+                         android:gravity="center"
+                         android:text="product's name"
+                         android:textSize="17sp" />
+
+
+                 </LinearLayout>
+
+                 <View
+                     android:id="@+id/sp3"
                      android:layout_width="match_parent"
-                     android:layout_height="30dp"
-                     android:layout_below="@+id/cactus"
-                     android:layout_marginTop="10dp"
-                     android:gravity="center"
-                     android:text="product's name"
-                     android:textSize="17sp" />
+                     android:layout_height="1dp"
+                     android:layout_below="@+id/linear"
+                     android:background="@android:color/darker_gray"
+                     app:layout_constraintTop_toBottomOf="@+id/linear" />
 
-
-             </LinearLayout>
-
-             <View
-                 android:id="@+id/sp3"
-                 android:layout_width="match_parent"
-                 android:layout_height="1dp"
-                 android:layout_below="@+id/linear"
-                 android:background="@android:color/darker_gray"
-                 app:layout_constraintTop_toBottomOf="@+id/linear" />
-
-             <LinearLayout
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_below="@+id/sp3"
-                 android:orientation="horizontal"
-                 tools:ignore="MissingConstraints">
-
-                 <ImageButton
-                     android:id="@+id/like"
+                 <LinearLayout
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
+                     android:layout_below="@+id/sp3"
+                     android:orientation="horizontal"
+                     tools:ignore="MissingConstraints">
 
-                     android:layout_marginLeft="30dp"
-                     android:background="@drawable/transparent"
-                     android:src="@drawable/like" />
+                     <ImageButton
+                         android:id="@+id/like"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
 
-                 <ImageButton
-                     android:id="@+id/comment"
+                         android:layout_marginLeft="30dp"
+                         android:background="@drawable/transparent"
+                         android:src="@drawable/like" />
+
+                     <ImageButton
+                         android:id="@+id/comment"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_toRightOf="@id/like"
+                         android:background="@drawable/transparent"
+                         android:src="@drawable/comment" />
+
+                     <ImageButton
+                         android:id="@+id/expand"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_alignRight="@id/sp3"
+                         android:layout_marginLeft="225dp"
+                         android:background="@drawable/transparent"
+                         android:src="@drawable/expand" />
+
+
+                 </LinearLayout>
+
+                 <Button
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
+                     android:layout_marginTop="500dp">
 
-                     android:layout_toRightOf="@id/like"
-                     android:background="@drawable/transparent"
-                     android:src="@drawable/comment" />
+                 </Button>
+     -->
+            </RelativeLayout>
 
-                 <ImageButton
-                     android:id="@+id/expand"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
+        </ScrollView>
 
-                     android:layout_alignRight="@id/sp3"
-                     android:layout_marginLeft="225dp"
-                     android:background="@drawable/transparent"
-                     android:src="@drawable/expand" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-             </LinearLayout>
-
-             <Button
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_marginTop="500dp">
-
-             </Button>
- -->
-       </RelativeLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/nav"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
 
 
-<com.google.android.material.navigation.NavigationView
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    tools:ignore="MissingConstraints"
-    android:id="@+id/nav"
-    android:layout_gravity="start"
-    app:headerLayout="@layout/navigation_header"
-    app:menu="@menu/navigation_menu"
+        >
 
 
-    >
+    </com.google.android.material.navigation.NavigationView>
 
 
-</com.google.android.material.navigation.NavigationView>
-
-
-    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

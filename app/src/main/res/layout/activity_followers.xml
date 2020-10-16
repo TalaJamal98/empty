@@ -62,12 +62,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/pic"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/logo"></ImageView>
+                android:src="@drawable/logo">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
 
             <TextView
                 android:id="@+id/name"
@@ -89,7 +91,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
-                android:background="#f2c40d"
+                android:background="@drawable/rounded"
                 ></Button>
 
             <view

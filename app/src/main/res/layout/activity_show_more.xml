@@ -150,11 +150,13 @@ android:id="@+id/size"
 <Button
     android:layout_width="150dp"
     android:layout_height="35dp"
-    android:background="@color/yellow"
+
     android:text="buy"
     android:layout_below="@id/description"
     android:layout_marginTop="35dp"
-    android:layout_centerHorizontal="true"></Button>
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/rounded"
+    ></Button>
 
         </RelativeLayout>
 
